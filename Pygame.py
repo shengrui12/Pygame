@@ -2,6 +2,7 @@ import pygame
 import sys
 pygame.init()
 
+#Def RGB 
 Black = (0, 0, 0)
 White = (255, 255, 255)
 Red = (255, 0, 0)
@@ -19,5 +20,13 @@ while True:
 
   screen.file(Black)
 
+  #SALA DE DIBUJO
+
+  pygame.draw.rect()
+  #pygame.draw.rect(surface, color, rect)
+  #pygame.draw.rect(surface, color, rect, width=0, border_radius=0, border_top_left_radius=-1, border_top_right_radius=-1, border_bottom_left_radius=-1, border_bottom_right_radius=-1)
+  
+
+  #TERMINAR SALA DE DIBUJO
 
   pygame.display.flip()
