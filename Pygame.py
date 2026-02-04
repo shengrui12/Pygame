@@ -18,7 +18,7 @@ while True:
     if event.type == pygame.QUIT:
       sys.exit()
 
-  screen.file(Black)
+  screen.fill(Black)
 
   #SALA DE DIBUJO
 
