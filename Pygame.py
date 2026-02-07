@@ -64,4 +64,4 @@ while True:
 
   #Refresh screen and add FPS
   pygame.display.flip()
-  clock.tick(30) #<---Lo que va dentro del paréntesis son los FPS
+  clock.tick(60) #<---Lo que va dentro del paréntesis son los FPS
