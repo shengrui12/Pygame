@@ -40,6 +40,9 @@ while True:
     y = coordinate[1]
     pygame.draw.circle(screen, Red, (x, y), 2)
     #pygame.draw.circle(surface, color, (x, y), radius)
+    coordinate[1] += 1
+    if coordinate[1] > 500:
+      coordinate[1] = 0
 
   #End drawing part ---------------------------------------------------------------------------
 
