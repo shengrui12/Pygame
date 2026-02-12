@@ -11,6 +11,8 @@ surface = ((100, 200))
 surface.fill("red")
 x = 100
 
+player = pygame.image.load("player.png")
+
 while running:
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
