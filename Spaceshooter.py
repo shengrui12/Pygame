@@ -9,6 +9,7 @@ running = True
 
 surface = ((100, 200))
 surface.fill("red")
+x = 100
 
 while running:
   for event in pygame.event.get():
@@ -17,6 +18,7 @@ while running:
 
   display.surface.fill("darkgrey")
   display_surface.blit
-  pygame.display.update(surface, (100, 150))
+  x += 0.1
+  pygame.display.update(surface, (x, 150))
 
 pygame.quit()
