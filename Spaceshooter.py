@@ -1,4 +1,5 @@
 import pygame
+
 pygame.init()
 window_x = 1280
 window_y = 720
@@ -7,20 +8,21 @@ pygame.display.set_caption("Space Shooter")
 
 running = True
 
-surface = ((100, 200))
-surface.fill("red")
 x = 100
-
 player = pygame.image.load("player.png")
+test_surface = pygame.Surface((100, 200))
+test_surface.fill("red")
 
 while running:
-  for event in pygame.event.get():
-    if event.type == pygame.QUIT:
-      running = False
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
 
-  display.surface.fill("darkgrey")
-  display_surface.blit
-  x += 0.1
-  pygame.display.update(surface, (x, 150))
+    display_surface.fill("darkgrey")
+    
+    display_surface.blit(player, (x, 150))
+    
+    x += 0.1
+    pygame.display.update()
 
 pygame.quit()
