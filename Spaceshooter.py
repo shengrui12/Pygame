@@ -9,9 +9,10 @@ pygame.display.set_caption("Space Shooter")
 running = True
 
 x = 100
-player = pygame.image.load("player.png")
-test_surface = pygame.Surface((100, 200))
-test_surface.fill("red")
+surf = pygame.Surface((100, 200))
+surf.fill("red")
+
+player_surf = pygame.image.load("../player.png")
 
 while running:
     for event in pygame.event.get():
@@ -20,7 +21,7 @@ while running:
 
     display_surface.fill("darkgrey")
     
-    display_surface.blit(player, (x, 150))
+    display_surface.blit(player_surf, (x, 150))
     
     x += 0.1
     pygame.display.update()
